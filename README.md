@@ -1,6 +1,5 @@
-[![Build Status](https://travis-ci.org/paulokuong/binpacker.svg?branch=master)](https://travis-ci.org/paulokuong/binpacker)
+[![Build Status](https://travis-ci.org/paulokuong/binpacker.svg?branch=master)](https://travis-ci.org/paulokuong/binpacker) [![Coverage Status](https://coveralls.io/repos/github/paulokuong/binpacker/badge.svg?branch=master)](https://coveralls.io/github/paulokuong/binpacker?branch=master)
 binpacker
-[![Coverage Status](https://coveralls.io/repos/github/paulokuong/binpacker/badge.svg?branch=master)](https://coveralls.io/github/paulokuong/binpacker?branch=master)
 ======
 
 Generic Bin Packing Problem Solver.
