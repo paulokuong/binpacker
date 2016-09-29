@@ -45,6 +45,8 @@ def test_bin():
     b.push(Item('F', 7))
     b.remove('E')
     assert b.get_items() == [Item('D', 2), Item('F', 7)]
+    b.name = 'Cool Bin'
+    assert b.name == 'Cool Bin'
 
 
 def test_binpacker():

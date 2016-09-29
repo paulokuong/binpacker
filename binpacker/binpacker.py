@@ -144,6 +144,26 @@ class Bin(object):
         self._capacity = capacity
 
     @property
+    def name(self):
+        """Return name.
+
+        Return:
+            str: Return name of the Bin.
+        """
+
+        return self._name
+
+    @name.setter
+    def name(self, name):
+        """Set name.
+
+        Args:
+            str: name of the Bin.
+        """
+
+        self._name = name
+
+    @property
     def capacity(self):
         """Return capacity
         """
