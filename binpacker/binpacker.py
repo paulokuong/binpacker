@@ -388,6 +388,7 @@ class Binpacker(object):
         while len(self._items) > 0:
             m = self.get_truth_table(self._capacity, self._items)
             new_bin = Bin(self._capacity)
+            new_bin.name = '[NEW BIN {}]'.format(len(self._bins))
             self._bins.append(new_bin)
             bin_index = len(self._bins) - 1
             picked_items = self._pick_items(m)
