@@ -1,3 +1,5 @@
+import pytest
+
 from binpacker.binpacker import Bin
 from binpacker.binpacker import Binpacker
 from binpacker.binpacker import Item
@@ -100,3 +102,19 @@ def test_get_truth_table():
         [True, True, True, True, True, True, True, True, True, True],
         [True, True, True, True, True, True, True, True, True, True]]
     assert actual == expected
+
+
+def test_capacity_exceeded():
+    """Test Item's weight exceeds maximum capacity
+    """
+
+    bp = Binpacker(9)
+    items = [
+        Item('A', 1), Item('B', 1), Item('C', 2),
+        Item('D', 2), Item('E', 9), Item('F', 3),
+        Item('G', 7), Item('H', 2), Item('I', 10)
+    ]
+
+    with pytest.raises(Exception) as err:
+        bp.items = items
+    assert 'Weight of Item: "I" exceeds the maximum bin capacity: 9'

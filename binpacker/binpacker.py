@@ -271,6 +271,12 @@ class Binpacker(object):
             list: list of Item objects.
         """
 
+        for i in items:
+            if i.weight > self._capacity:
+                raise Exception(
+                    'Weight of Item: "{}" exceeds the maximum '
+                    'bin capacity: {}.'.format(
+                        i.name, self._capacity))
         self._items = items
 
     @property
