@@ -5,7 +5,7 @@ binpacker
 Generic Bin Packing Problem Solver.
 
 > Given a set of items with weight information and capacity of a bin,
-> Binpacker determines which items can fit in a bin with that capacity
+> Binpacker determines which items can fit in the bin with that capacity
 > and continues to pack all items in new bins in a way that it will utilize
 > the space of each bin. In the other word, Binpacker can be used to
 > determine what is the minimum number of bins we can use to pack all items
