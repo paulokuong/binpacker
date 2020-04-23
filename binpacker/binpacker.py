@@ -373,7 +373,7 @@ class Binpacker(object):
         out when it is being packed. Therefore,
         """
 
-        self._items = sorted(self._items)
+        self._items = sorted(self._items,reverse=True)
         # First, go through existing bin to see if they can
         # accommodate new weights.
         for index, old_bin in enumerate(self._bins):
